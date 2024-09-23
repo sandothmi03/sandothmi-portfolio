@@ -1,0 +1,288 @@
+.rotate {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block;
+    position: fixed;
+    top: 85vh;
+    transform: rotateZ(270deg);
+    margin-left: -60px;
+    padding: 10px 15px; /* Add padding to make it look like a button */
+    border-radius: 5px;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.rotate:hover {
+    background-color: #00002a; /* White background on hover */
+    color: white; /* Black text on hover */
+}
+
+#welcome p{
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 450;
+    background: linear-gradient(to right, #eec440, #fffa8a, #ddac17, #ffff95);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+    
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+main section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    color: gold;
+    font-family: "Urbanist";
+    font-weight: 200;
+  }
+  
+#w-content {
+    display: flex;
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Vertically center content */
+    padding: 30px; /* Add padding if needed */
+}
+
+#w-content .text-content {
+    width: 35%; /* Adjust width as needed */
+    text-align: left; /* Align text to the left */
+    margin-left: 10%;
+    margin-top: -15%;
+}
+
+#w-content .image-content {
+    width: 50%; /* Adjust width as needed */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    margin-right: 15%;
+    margin-bottom: 5%
+}
+
+#w-content h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#w-content h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#w-content p {
+    font-size: 1.25rem;
+    margin-top: 10px; /* Add space between lines */
+}
+
+#w-content img {
+    height: 79vh;
+    display: block;
+    margin: 0; /* Remove margins for alignment */
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#About_Me{
+    background-image: url('../shared css/photos/uni\ pic.jpg');
+    background-blend-mode:multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.about-container {
+    display: flex; /* Use flexbox to align the About Me and Education sections */
+    justify-content: space-between; /* Ensures the sections stay apart */
+    padding: 0 20%; /* Add padding for the container */
+}
+
+#About_me {
+    flex: 0 0 50%; /* Occupies 30% of the width */
+    text-align: right; /* Align text to the left */
+    margin-top: 6%;
+}
+
+#About_me h5 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000040;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.education-section {
+    flex: 0 0 40%; /* Occupies 60% of the width */
+    border-left: 3px solid #007BFF; /* Adds the blue line */
+    padding-left: 50px; /* Padding for spacing from the line */
+    margin-top: 2%; /* Align with About Me */
+}
+
+
+.education-section h4 {
+    font-size: 4rem; /* Adjust size */
+    color: #00002a;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education-section p {
+    margin: 0;
+    color: #000000;
+    padding-left: 1%;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem; /* Adjust the font size for readability */
+}
+
+.tilesWrap {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+    margin-top: -10%;
+}
+
+.tilesWrap li {
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #33001e;
+	border: 1px solid #0000;
+	text-align: left;
+}
+
+.tilesWrap li h2 {
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.tilesWrap li h3 {
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+
+.tilesWrap li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+}
+
+.tilesWrap li button {
+	background: transparent;
+	border: 1px solid #2f0909;
+	padding: 10px 20px;
+	color: #b7b7b7;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-40px);
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+
+.tilesWrap li:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.tilesWrap li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+
+.tilesWrap li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+.tilesWrap li:nth-child(1):before {
+	background: #C9FFBF;
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+
+.tilesWrap li:nth-child(2):before {
+	background: #f2709c;
+    background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    }
+
+.tilesWrap li:nth-child(3):before {
+	background: #c21500;
+    background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+    background: linear-gradient(to right, #ffc500, #c21500);
+    }
+
+.tilesWrap li:nth-child(4):before {
+	background: #FC354C;
+    background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+    background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+
+
+#Skills .skill-section{
+    background-image: url('../shared css/photos/Skills.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    
+
+}
+
+h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 6rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0%;
+    padding-top: 4%;
+    
+}
+
+#footer{
+    width: 100%;
+    height: 25vh; /* 1/4 of the viewport height */
+    background-color: #111; /* Dark background color */
+    color: white; /* Text color */
+}

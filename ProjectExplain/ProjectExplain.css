@@ -1,0 +1,162 @@
+.arrow-link{
+    text-decoration: none;
+    color: #1e90ff;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    
+}
+
+.arrow-link:hover {
+    color: #013A63; /* Change color on hover */
+  }
+
+h3{
+  margin-top: 2.5%;
+
+}
+
+h2{
+  color: rgb(184, 234, 253);
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: left;
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.25rem;
+
+}
+
+h6{
+  text-align: justify;
+  color: #00B4D8;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.25rem;
+
+}
+
+h5{
+  text-align: justify;
+  color: skyblue;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.5rem;
+  margin-bottom: -4%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: Raleway;
+    
+  }
+  
+.heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: white;
+  }
+  
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+.img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+.img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+.img-box:hover {
+    cursor: pointer;
+  }
+  
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+
+  }
+  
+.opacity-low {
+    opacity: 0.8;
+  }
+
+.gallery-image {
+    margin-top: 3%;
+}
+
+#pdf-section {
+  margin: 5% 5%;
+  text-align: center;
+}
+
+#pdf-section h3 {
+  font-size: 1.8rem;
+  color: skyblue;
+  margin-bottom: 20px;
+}
+
+#pdf-viewer {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+* {
+    font: inherit;
+  }
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+.active,
+nav li:hover {
+    border-bottom: 1px solid #eec440;
+  }
+  
+li,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+
+body {
+    background-color: #00002a;
+    margin: 0;
+    padding: 0;
+    }
+      
+header {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+nav ul {
+    font-family: sans-serif;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+    margin-bottom: -0.5vh;
+    background:  #eec440;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
+
+nav li {
+    font-size: 18px;
+    width: max-content;
+    margin: 2vh;
+    }
+
+.logo img {
+    height: 5rem;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 25px;
+    }
+
+/* General Footer Styling */
+#footer {
+    width: 100%;
+    height: 25vh; /* 1/4 of the screen height */
+    background-color: #111; /* Dark background */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Horizontal Menu Styling */
+#footer .footer .menu {
+    list-style: none;
+    display: flex; /* Makes the list horizontal */
+    margin-bottom: 15px; /* Adjust to space out from text */
+}
+
+#footer .footer .menu .menu__item {
+    margin: 10px; /* Spacing between menu items */
+}
+
+#footer .footer .menu .menu__link {
+    text-decoration: none;
+    color: rgb(255, 235, 16);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#footer .footer .menu .menu__link:hover {
+    color: #eec440; /* Hover color */
+}
+
+/* Footer Text Styling */
+#footer p {
+    font-size: 1.0rem;
+    color: rgb(255, 242, 0);
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+

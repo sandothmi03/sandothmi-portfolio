@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat with Me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+         />
+        <link rel="stylesheet" href="../shared css/sharedCss.css" />
+        <link rel="stylesheet" href="../Chat/chat.css" />
+        
+        <link
+        rel="website icon"
+        type="png"
+        href="../shared css/photos/Logo new1.png"/>
+    </head>
+    <body>
+        <main>
+            <section id="welcome">
+              <header>
+                <div class="logo">
+                  <a href="../Home/index.html">
+                    <img src="../shared css/photos/Logo new.png" alt="" />
+                  </a>  
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Home/index.html#About_Me">About Me</a></li>
+                    <li><a href="../Projects/project.html">Projects</a></li>
+                    <li><a href="../Achivements/achivements.html">Achievements</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                    <li class="active"><a href="../Chat/chat.html">Chat with Me</a></li>
+                  </ul>
+                </nav>
+              </header>
+            </section>
+
+            <!-- Chatbot container -->
+            <section id="chatbot">
+                <div class="chat-container">
+                    <div class="chatbox">
+                        <div id="chatwithme">
+                            <img src="../shared css/photos/Me3.jpg" alt="Profile pic" class="profile-pic">
+                            <h1>Chat with Me</h2>
+                        </div>
+                        <div id="chat-log" class="chat-log">
+                            <!-- Chat messages will appear here -->
+                        </div>
+                        <div class="chat-input-container">
+                            <input type="text" id="chat-input" placeholder="Type a message..." />
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+                <script src="../Chat/chat.js"></script>
+            </section>
+            
+            <section id="footer">
+              <footer class="footer">
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="../Home/index.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="../Home/index.html#About_Me">About Me</a></li>
+                  <li class="menu__item"><a class="menu__link" href="../Projects/project.html">Projects</a></li>
+                  <li class="menu__item"><a class="menu__link" href="../Achivements/achivements.html">Achievements</a></li>
+                  <li class="menu__item"><a class="menu__link" href="../Contact/contact.html">Contact</a></li>
+                  <li class="menu__item"><a class="menu__link" href="../Chat/chat.html">Chat with Me</a></li>
+            
+                </ul>
+                <p>&copy;2024 Gihanga Sandothmi | All Rights Reserved</p>
+              </footer>
+            </section>
+        </main>    
+    </body>
+</html>        

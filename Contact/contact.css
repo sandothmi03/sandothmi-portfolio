@@ -1,0 +1,52 @@
+/* Contact Section Styling */
+#contact {
+    padding: 50px 0;
+    background-color: #00002a;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-header .profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-header h1 {
+    font-size: 3em;
+    margin: 20px 0;
+    color: skyblue;
+
+}
+
+.contact-header p {
+    font-size: 1em;
+    color: #d3d3d3;
+    text-align:center;
+}
+
+.contact-info {
+    display:inline-flex;
+    justify-content:center;
+    align-items: flex-start;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.contact-card {
+    background-color: #00002a;
+    border-radius: 10px;
+    width: 5%;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+
